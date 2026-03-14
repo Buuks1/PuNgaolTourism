@@ -1,0 +1,325 @@
+/*first section styling*/
+
+.firstSection {
+    display: flex;
+    align-items: center;
+    height: 110vh;
+}
+
+#sectionPic {
+    width: 35%;
+    height: auto;
+    display: inline-block;
+}
+
+#secDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.sectionDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 600px;
+    top: auto;
+}
+
+.sectionDiv>h2 {
+    margin-bottom: 30px;
+    justify-self: flex-start;
+    margin-left: 40px;
+    font-weight: 900;
+    font-size: 200%;
+    color: #0e2f06;
+}
+
+.sectionDiv>p {
+    max-width: 90%;
+    margin-left: 40px;
+    font-weight: 500;
+    color: #0e2f06;
+}
+
+/* Appended Section Styling*/
+
+.appendedSection {
+    padding: 0px 200px;
+    color: white;
+    background-color: #0e2f06;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.appendedSection p {
+    margin-bottom: 50px;
+}
+
+.mySlide a {
+    text-decoration: none;
+    color: #0e2f06;
+    transition: 0.3s ease;
+}
+
+.mySlide a:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+    color: white;
+    transition: 0.6s ease;
+}
+
+#appendedSlideshow {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 0.5rem;
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+#appendedSection h2{
+    color: white;
+}
+
+.mySlide {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    scroll-snap-align: start;
+    object-fit: cover;
+    flex: 1 0 100%
+}
+
+.slideDiv {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-right: 190px;
+    margin-bottom: 50px;
+}
+
+.slideDiv p {
+    margin-top: 10px;
+    color: white;
+}
+
+.slideDiv h2 {
+    color: white;
+    font-weight: 900;
+    font-size: 200%;
+}
+
+
+.slideImg {
+    width: 150%;
+    margin-bottom: 10px;
+}
+
+#appendedButtons {
+    display: flex;
+}
+
+#appendedButtons a {
+    font-size: 40px;
+    margin-right: 20px;
+    border-radius: 50%;
+    padding: 15px;
+    background-color: white;
+    border: #0e2f063a solid 0.1px;
+    transition: 0.3s ease;
+    color: #0e2f06;
+}
+
+#appendedButtons a:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.6s ease;
+}
+
+/* Second Section Styling*/
+
+.secondSection {
+    display: flex;
+    height: 40vh;
+    background-color: #e3ffd7;
+    color: #0e2f06;
+    align-items: center;
+    
+}
+
+#secondSectionDiv {
+    display: flex;
+    flex-direction: column; 
+}
+
+#secondSectionDiv h2 {
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 200%;
+    padding: 0px 200px;
+    
+}
+
+#sDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 120px;
+    
+}
+
+#sDiv div {
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+}
+
+#sDiv i {
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 25px;
+    display: inline-block;
+    background-color: white;
+    margin-right: 20px;
+}
+
+#sDiv a {
+    width: 45%;
+    font-weight: 550;
+}
+
+/* Third Section Styling*/
+
+.thirdSection {
+display: flex;
+height: 110vh;
+align-items: center;
+color: #0e2f06;  
+}
+
+#thirdSectionDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.thirdSection h2 {
+    padding: 0px 200px;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 200%;
+}
+
+/* Slideshow Styling */
+.slideImg {
+    width: 98%;
+}
+
+.slideshow {
+    max-width: 60%;
+    position: relative;
+    margin: auto;
+}
+
+.slideText {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 15px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.slideNum {
+    display: none;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    align-items: center;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.dot:hover {
+    background-color: #717171;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.prev:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.mySlides {
+    display: none;
+}
+.prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+@keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+
+#buttonSection {
+    text-align: center;
+}
